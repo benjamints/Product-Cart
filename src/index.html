@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./styles.css" /> -->
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>Product Catalog</title>
+  </head>
+
+  <body>
+    <div class="z-[1000] wave">
+      <section class="products">
+        <div class="my-4 relative">
+          <img src="./img/nike.png" alt="Nike" class="block w-14 z-50" />
+        </div>
+        <div class="relative my-5 text-2xl font-[700]">Our Products</div>
+        <div class="relative overflow-y-scroll h-[calc(100vh-89px)] scrollBar">
+          <div class="" id="products"></div>
+        </div>
+
+        <!-- Products will be dynamically generated here -->
+      </section>
+
+      <section id="cart" class="cart">
+        <div class="my-4 relative">
+          <img src="./img/nike.png" alt="Nike" class="block w-14 z-50" />
+        </div>
+        <div class="relative my-5 text-2xl font-[700] flex justify-between items-center">
+          <p>Your Cart</p>
+          <div id="total-price"> $<span id="total-amount">0</span></div>
+        </div>
+
+        <div class="relative overflow-y-scroll h-[calc(100vh-89px)] scrollBar">
+          <div id="cart-items" class="py-[40px] first:pt-0">
+            <!-- Cart items will be dynamically generated here -->
+          </div>
+        </div>
+
+        <button id="checkout-btn">Checkout</button>
+        <p id="empty-cart-msg">Your cart is empty</p>
+      </section>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
